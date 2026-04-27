@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.App {
+  padding: 40px 20px;
+}
+
+.user-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-list-container h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.user-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.user-card h2 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.user-card p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.user-card a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.user-card a:hover {
+  text-decoration: underline;
+}
+
+.loading, .error {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 100px;
+}
+
+.error {
+  color: #ff6b6b;
+}
